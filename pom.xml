@@ -16,10 +16,6 @@
       <name>commania7</name>
       <url>https://maven.pkg.github.com/commania7/DemoApp</url>
     </repository>
-    <snapshotRepository>
-        <id>snapshots</id>  
-        <url>https://maven.pkg.github.com/commania7/DemoApp</url
-    </snapshotRepository>
   </distributionManagement>
   <properties>
     <spring.version>4.1.1.RELEASE</spring.version>
