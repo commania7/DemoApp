@@ -16,17 +16,14 @@
       <name>commania7</name>
       <url>https://maven.pkg.github.com/commania7/DemoApp</url>
     </repository>
+    <snapshotRepository>
+        <id>snapshots</id>  
+        <url>https://maven.pkg.github.com/commania7/DemoApp</url
+    </snapshotRepository>
   </distributionManagement>
   <properties>
     <spring.version>4.1.1.RELEASE</spring.version>
   </properties>
-  <servers>
-    <server>
-      <id>github</id>
-      <username>${env.GITHUB_USER_REF}</username>
-      <password>${env.GITHUB_TOKEN_REF}</password>
-    </server>
-  </servers>
   <dependencyManagement>
     <dependencies>
       <dependency>
