@@ -26,7 +26,7 @@ jobs:
         server-username: GITHUB_USER_REF
         server-password: GITHUB_TOKEN_REF
     - name: Build with Maven
-      run: mvn clean package -DattachMuleSources -Pgithub deploy
+      run: mvn --batch-mode deploy
       env:
         GITHUB_USER_REF: ${{ secrets.GIT_USERNAME }}
         GITHUB_TOKEN_REF: ${{ secrets.GIT_TOKEN }}
